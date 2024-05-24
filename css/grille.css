@@ -1,0 +1,93 @@
+
+pixel 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+pixel-parts 
+{
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+pixel-part 
+{
+    display: flex;
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid #444;
+
+    background: center no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+pixel-part::after 
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+pixel-part.black 
+{
+    background-color: black;
+}
+
+pixel-part.white 
+{
+    background-color: white;
+}
+
+pixel-part.red 
+{
+    background-color: red;
+}
+
+pixel-part.blue  
+{
+    background-color: blue;
+}
+
+pixel-part.green  
+{
+    background-color: green;
+}
+
+pixel-part.orange  
+{
+    background-color: orange;
+}
+
+pixel-part.yellow  
+{
+    background-color: yellow;
+}
+
+pixel-part.purple  
+{
+    background-color: purple;
+}
+
+pixel-part.pink
+{
+    background-color: pink;
+}
+
+@media screen and (max-width: 1000px) 
+{
+
+    pixel-part 
+    {
+        width: 15px;
+        height: 15px;
+    }
+}

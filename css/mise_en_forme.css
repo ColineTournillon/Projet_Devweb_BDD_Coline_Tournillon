@@ -1,0 +1,44 @@
+@import url(pixelColors.css);
+@import url(grille.css);
+
+
+body 
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #21443d;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body > div 
+{
+    width: 1000px;
+
+    display: flex;
+    align-items: center;
+}
+
+h1 
+{
+    text-align: center;
+    color: #050505;
+}
+
+
+@media screen and (max-width: 1000px) 
+{
+    body > div 
+    {
+        width: 100%;
+    }
+}
